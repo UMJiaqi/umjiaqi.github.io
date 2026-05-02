@@ -125,6 +125,7 @@ a:hover{color:#bc6262;cursor:pointer}
 #main-pub-card-container .pub-card .authors u{color:#333333;font-weight:600;text-decoration:none}
 #main-pub-card-container .pub-card .conference{color:#333333;font-weight:600}
 #main-pub-card-container .pub-card .journal{color:#333333;font-weight:600}
+#main-pub-card-container .pub-card .workshop{color:#333333;font-weight:600}
 #main-pub-card-container .pub-card .note{display:block;color:#999999;text-decoration:none;font-size:14px}
 #main-pub-card-container .pub-card .info{margin-bottom:0;}
 #main-pub-card-container .row{margin:0}
@@ -192,7 +193,7 @@ a:hover{color:#bc6262;cursor:pointer}
         <div class="main-bio-container">
             <h5 class="subtitle">News</h5>
             <ul>
-                <li><span style="color:dodgerblue">[2026.04]</span> Two conferences paper are accepted by <a href="https://www.robosoft2026.org/" style="color:dodgerblue;font-weight: normal;"><u><b>IEEE RoboSoft 2026</b></u></a>.</li>
+                <li><span style="color:dodgerblue">[2026.04]</span> Two conference papers are accepted by <a href="https://www.robosoft2026.org/" style="color:dodgerblue;font-weight: normal;"><u><b>IEEE RoboSoft 2026</b></u></a>.</li>
                 <li><span style="color:dodgerblue">[2025.12]</span> A journal paper is accepted by <a href="https://www.sciencedirect.com/science/article/pii/S2352431625001427" style="color:dodgerblue;font-weight: normal;"><u><b>Extreme Mechanics Letters</b></u></a>.</li>
                 <li><span style="color:dodgerblue">[2025.10]</span> I will be giving a talk for <a href="https://sites.gatech.edu/2025ses/tracks/track-4/4-2/" style="color:dodgerblue;font-weight: normal;"><u><b>SES Annual Technical Meeting 2025</b></u></a>.</li>
                 <li><span style="color:dodgerblue">[2025.09]</span> A journal paper is accepted by <a href="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/advs.202510382" style="color:dodgerblue;font-weight: normal;"><u><b>Advanced Science</b></u></a>.</li>
@@ -222,286 +223,264 @@ a:hover{color:#bc6262;cursor:pointer}
             (
                 <a id="publication-by-selected" href="javascript:;", onClick="publicationBySelected();">show selected</a> /
                 <a id="publication-by-date" href="javascript:;", onClick="publicationByDate();">show all by date</a> /
-                <a id="publication-by-topic" href="javascript:;", onClick="publicationByTopic();">show all by topic</a>
+                <a id="publication-by-topic" href="javascript:;", onClick="publicationByTopic();">show all by category</a>
             )
             </h5>
-            <p class="subtitle-aux"><span class="bold">Topics:</span>
-                <a href="#topic-soft-robot" onClick="return publicationByTopicSpecific(this)" data-topic="soft-robot">Soft Robotics</a> /
+            <p class="subtitle-aux"><span class="bold">Categories:</span>
+                <a href="#topic-journal" onClick="return publicationByTopicSpecific(this)" data-topic="journal">Journal</a> /
+                <a href="#topic-conference" onClick="return publicationByTopicSpecific(this)" data-topic="conference">Conference</a> /
+                <a href="#topic-workshop" onClick="return publicationByTopicSpecific(this)" data-topic="workshop">Workshop</a>
                 <span class="note">(*/†: indicates equal contribution/ project leader.)</span>
             </p>
     <div id="main-pub-card-container" class="activated hide">
-        <div class="pub-card" data-topic="soft-robot" data-year="2026" data-selected="true">
-            <div class="row">
-                <div class="col-l col-xs-12 col-lg-3">
-                  <video width="100%" height="100%" autoplay muted playsinline loop><source src="data/projects/V-PCR.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-                </div>
-                <div class="col-r col-xs-12 col-lg-9">
-                    <div class="pub-card-body ">
-                        <h5 class="title">Large Language Models as Natural Selector for Embodied Soft Robot Design.</h5>
-                        <h6 class="authors">
-                            Changhe Chen,
-                            Xiaohao Xu,
-                            Xiangdong Wang,
-                            <u>Jiaqi Wang</u>,
-                            Xiaonan Huang
-                            
-                        </h6>
-                        <p class="info">
-                            <a href="https://arxiv.org/abs/2510.27666" class="journal" style="color:#0d5797;"> IEEE RoboSoft 2026 </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>     
-    <div id="main-pub-card-container" class="activated hide">
-        <div class="pub-card" data-topic="soft-robot" data-year="2026" data-selected="true">
-            <div class="row">
-                <div class="col-l col-xs-12 col-lg-3">
-                  <video width="100%" height="100%" autoplay muted playsinline loop><source src="data/projects/V-PCR.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-                </div>
-                <div class="col-r col-xs-12 col-lg-9">
-                    <div class="pub-card-body ">
-                        <h5 class="title">Whole-Body Proprioceptive Morphing: A Modular Soft Gripper for Robust Cross-Scale Grasping.</h5>
-                        <h6 class="authors">
-                            Dong Heon Han,
-                            Xiaohao Xu,
-                            Yuxi Chen,
-                            Yusheng Zhou,
-                            Xinqi Zhang,
-                            <u>Jiaqi Wang</u>,
-                            Daniel Bruder
-                            Xiaonan Huang
-                            
-                        </h6>
-                        <p class="info">
-                            <a href="https://arxiv.org/abs/2510.27666" class="journal" style="color:#0d5797;"> IEEE RoboSoft 2026 </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>     
-    <div id="main-pub-card-container" class="activated hide">
-        <div class="pub-card" data-topic="soft-robot" data-year="2026" data-selected="true">
-            <div class="row">
-                <div class="col-l col-xs-12 col-lg-3">
-                  <video width="100%" height="100%" autoplay muted playsinline loop><source src="data/projects/V-PCR.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-                </div>
-                <div class="col-r col-xs-12 col-lg-9">
-                    <div class="pub-card-body ">
-                        <h5 class="title">Soft electrostatic clutches program strain transmission in multifunctional soft robots.</h5>
-                        <h6 class="authors">
-                            <u>Jiaqi Wang</u>,
-                            Dezhong Tong,
-                            Zexiong Chen,
-                            Xiaonan Huang
-                            
-                        </h6>
-                        <p class="info">
-                            <a href="" class="journal" style="color:#0d5797;"> [In submission] </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>     
-    <div id="main-pub-card-container" class="activated hide">
-        <div class="pub-card" data-topic="soft-robot" data-year="2026" data-selected="true">
-            <div class="row">
-                <div class="col-l col-xs-12 col-lg-3">
-                  <video width="100%" height="100%" autoplay muted playsinline loop><source src="data/projects/V-PCR.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-                </div>
-                <div class="col-r col-xs-12 col-lg-9">
-                    <div class="pub-card-body ">
-                        <h5 class="title">Geometry-controlled instability pathway selection in elastic helices enables fast, efficient robotic locomotion.</h5>
-                        <h6 class="authors">
-                            <u>Jiaqi Wang</u>*,
-                            Dezhong Tong*,
-                            Zexiong Chen,
-                            Xiaonan Huang,
-                            Khalid Jawed Mohammad 
-                            
-                        </h6>
-                        <p class="info">
-                            <a href="" class="journal" style="color:#0d5797;"> [Science Advances (under review)] </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>     
-    <div id="main-pub-card-container" class="activated hide">
-        <div class="pub-card" data-topic="soft-robot" data-year="2026" data-selected="true">
-            <div class="row">
-                <div class="col-l col-xs-12 col-lg-3">
-                  <video width="100%" height="100%" autoplay muted playsinline loop><source src="data/projects/V-PCR.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-                </div>
-                <div class="col-r col-xs-12 col-lg-9">
-                    <div class="pub-card-body ">
-                        <h5 class="title">Highly Deformable Proprioceptive Membrane for Real-Time 3D Shape Reconstruction.</h5>
-                        <h6 class="authors">
-                            Guanyu Xu,
-                            <u>Jiaqi Wang</u>*†,
-                            Dezhong Tong,
-                            Xiaonan Huang
-                            
-                        </h6>
-                        <p class="info">
-                            <a href="arXiv preprint arXiv:2601.13574" class="journal" style="color:#0d5797;"> [Advanced Robotics Research (under review)] </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>     
-    <div id="main-pub-card-container" class="activated hide">
-        <div class="pub-card" data-topic="soft-robot" data-year="2026" data-selected="true">
-            <div class="row">
-                <div class="col-l col-xs-12 col-lg-3">
-                  <video width="100%" height="100%" autoplay muted playsinline loop><source src="data/projects/V-PCR.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-                </div>
-                <div class="col-r col-xs-12 col-lg-9">
-                    <div class="pub-card-body ">
-                        <h5 class="title">SPPIRO: A Soft, Power-Autonomous, Proprioceptive In-Pipe RObot for Adaptive Inspection in Complex Pipeline Environments</h5>
-                        <h6 class="authors">
-                            Zexiong Chen,
-                            Xinqi Zhang,
-                            <u>Jiaqi Wang</u>†,
-                            Xiaonan Huang
-                            
-                        </h6>
-                        <p class="info">
-                            <a href="https://www.researchsquare.com/article/rs-7331030/v1" class="journal" style="color:#0d5797;"> [Nature NPJ Robotics (under review)] </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>            
-    <div id="main-pub-card-container" class="activated hide">
-        <div class="pub-card" data-topic="soft-robot" data-year="2025" data-selected="true">
-            <div class="row">
-                <div class="col-l col-xs-12 col-lg-3">
-                  <video width="100%" height="100%" autoplay muted playsinline loop><source src="data/projects/V-PCR.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-                </div>
-                <div class="col-r col-xs-12 col-lg-9">
-                    <div class="pub-card-body ">
-                        <h5 class="title">Discrete differential geometry for simulating nonlinear behaviors of flexible systems: A survey</h5>
-                        <h6 class="authors">
-                            Dezhong Tong*,
-                            Andrew Choi*,
-                            <u>Jiaqi Wang</u>*,
-                            Weicheng Huang,
-                            Zexiong Chen,
-                            Jiahao Li,
-                            Xiaonan Huang,
-                            Mingchao Liu,
-                            Huajian Gao,
-                            K. Jimmy Hsia
-                            
-                        </h6>
-                        <p class="info">
-                            <a href="https://www.sciencedirect.com/science/article/pii/S2352431625001427" class="journal" style="color:#0d5797;"> [Extreme Mechanics Letters (Cover paper)] </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="pub-card" data-selected="true" data-topic="conference" data-year="2026">
+        <div class="row">
+        <div class="col-l col-xs-12 col-lg-3">
+        <video autoplay="" height="100%" loop="" muted="" playsinline="" width="100%"><source src="data/projects/V-PCR.mp4" type="video/mp4"/>Your browser does not support the video tag.</video>
         </div>
-
-    <div id="main-pub-card-container" class="activated hide">
-        <div class="pub-card" data-topic="soft-robot" data-year="2025" data-selected="true">
-            <div class="row">
-                <div class="col-l col-xs-12 col-lg-3">
-                  <video width="100%" height="100%" autoplay muted playsinline loop><source src="data/projects/V-PCR.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-                </div>
-                <div class="col-r col-xs-12 col-lg-9">
-                    <div class="pub-card-body ">
-                        <h5 class="title"> Origami-Inspired Soft Robotic Arm: A Modular Platform for Manipulation.</h5>
-                        <h6 class="authors">
-                            Jiyang Wang,
-                            Yuchen You,
-                            Xinqi Zhang,
-                            Haobo Fang,
-                            <u>Jiaqi Wang</u>†,
-                            Xiaonan Huang
-                            
-                        </h6>
-                        <p class="info">
-                            <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2JFIuDUAAAAJ&citation_for_view=2JFIuDUAAAAJ:d1gkVwhDpl0C" class="journal" style="color:#0d5797;"> [ICRA 2025 Workship] </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>    
-        
-        <div id="main-pub-card-container" class="activated hide">
-            <div class="pub-card" data-topic="soft-robot" data-year="2025" data-selected="true">
-                <div class="row">
-                    <div class="col-l col-xs-12 col-lg-3">
-                      <video width="100%" height="100%" autoplay muted playsinline loop><source src="data/projects/V-PCR.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-                    </div>
-                    <div class="col-r col-xs-12 col-lg-9">
-                        <div class="pub-card-body ">
-                            <h5 class="title">SPARC: A Soft, Proprioceptive, Agile Robot for 3D Climbing and Exploration with Precise Trajectory Following</h5>
-                            <h6 class="authors">
-                                Weicheng Fan*,
-                                <u>Jiaqi Wang</u>*,
-                                Hongjian Zhang,
-                                Qichen Wu,
-                                Genliang Chen,
-                                Hao Wang,
-                                Xiaonan Huang
-                                
-                            </h6>
-                            <p class="info">
-                                <a href="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/advs.202510382" class="journal" style="color:#0d5797;"> [Advanced Science] </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="main-pub-card-container" class="activated hide">
-                <div class="pub-card" data-topic="soft-robot" data-year="2024" data-selected="true">
-                    <div class="row">
-                        <div class="col-l col-xs-12 col-lg-3">
-                          <video width="100%" height="100%" autoplay muted playsinline loop><source src="data/projects/V-PCR.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-                        </div>
-                        <div class="col-r col-xs-12 col-lg-9">
-                            <div class="pub-card-body ">
-                                <h5 class="title">Vacuum-Driven Parallel Continuum Robots With Self-Sensing Origami Linkages</h5>
-                                <h6 class="authors">
-                                    Weicheng Fan*,
-                                    <u>Jiaqi Wang</u>*,
-                                    Zhuang Zhang,
-                                    Genliang Chen,
-                                    Hao Wang
+        <div class="col-r col-xs-12 col-lg-9">
+        <div class="pub-card-body">
+        <h5 class="title">Large Language Models as Natural Selector for Embodied Soft Robot Design.</h5>
+        <h6 class="authors">
+                                    Changhe Chen,
+                                    Xiaohao Xu,
+                                    Xiangdong Wang,
+                                    <u>Jiaqi Wang</u>,
+                                    Xiaonan Huang
                                     
                                 </h6>
-                                <p class="info">
-                                    <a href="https://ieeexplore.ieee.org/document/10378957" class="journal" style="color:#0d5797;"> [IEEE/ASME Transactions on Mechatronics] </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="pub-card" data-topic="reasoning-planning" data-year="2023" data-selected="true">
-                    <div class="row">
-                        <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/regression-width.png" />
-                        </div>
-                        <div class="col-r col-xs-12 col-lg-9">
-                            <div class="pub-card-body">
-                                <h5 class="title">What Planning Problem Can A Relational Neural Network Solve</h5>
-                                <h6 class="authors">
-                                    <u>Jiayuan Mao</u>,
-                                    <a target="_blank" href="https://people.csail.mit.edu/tlp/">Tomás Lozano-Pérez</a>,
-                                    <a target="_blank" href="https://cocosci.mit.edu/josh">Joshua B. Tenenbaum</a>,
-                                    <a target="_blank" href="https://people.csail.mit.edu/lpk/">Leslie Pack Kaelbling</a>
+        <p class="info">
+        <a class="conference" href="https://arxiv.org/abs/2510.27666" style="color:#0d5797;"> IEEE RoboSoft 2026 </a>
+        </p>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="pub-card" data-selected="true" data-topic="conference" data-year="2026">
+        <div class="row">
+        <div class="col-l col-xs-12 col-lg-3">
+        <video autoplay="" height="100%" loop="" muted="" playsinline="" width="100%"><source src="data/projects/V-PCR.mp4" type="video/mp4"/>Your browser does not support the video tag.</video>
+        </div>
+        <div class="col-r col-xs-12 col-lg-9">
+        <div class="pub-card-body">
+        <h5 class="title">Whole-Body Proprioceptive Morphing: A Modular Soft Gripper for Robust Cross-Scale Grasping.</h5>
+        <h6 class="authors">
+                                    Dong Heon Han,
+                                    Xiaohao Xu,
+                                    Yuxi Chen,
+                                    Yusheng Zhou,
+                                    Xinqi Zhang,
+                                    <u>Jiaqi Wang</u>,
+                                    Daniel Bruder
+                                    Xiaonan Huang
+                                    
                                 </h6>
-                                <p class="info">
-                                    <a target="_blank" href="https://nips.cc/Conferences/2023" class="conference">NeurIPS 2023</a> <span class="highlight">(Spotlight)</span>
-                                    <a target="_blank" href="https://concepts-ai.com/p/goal-regression-width/regression_width_neurips2023.pdf">Paper (Preprint)</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
+        <p class="info">
+        <a class="conference" href="https://arxiv.org/abs/2510.27666" style="color:#0d5797;"> IEEE RoboSoft 2026 </a>
+        </p>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="pub-card" data-selected="true" data-topic="journal" data-year="2026">
+        <div class="row">
+        <div class="col-l col-xs-12 col-lg-3">
+        <video autoplay="" height="100%" loop="" muted="" playsinline="" width="100%"><source src="data/projects/V-PCR.mp4" type="video/mp4"/>Your browser does not support the video tag.</video>
+        </div>
+        <div class="col-r col-xs-12 col-lg-9">
+        <div class="pub-card-body">
+        <h5 class="title">Soft electrostatic clutches program strain transmission in multifunctional soft robots.</h5>
+        <h6 class="authors">
+        <u>Jiaqi Wang</u>,
+                                    Dezhong Tong,
+                                    Zexiong Chen,
+                                    Xiaonan Huang
+                                    
+                                </h6>
+        <p class="info">
+        <a class="journal" href="" style="color:#0d5797;"> [In submission] </a>
+        </p>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="pub-card" data-selected="true" data-topic="journal" data-year="2026">
+        <div class="row">
+        <div class="col-l col-xs-12 col-lg-3">
+        <video autoplay="" height="100%" loop="" muted="" playsinline="" width="100%"><source src="data/projects/V-PCR.mp4" type="video/mp4"/>Your browser does not support the video tag.</video>
+        </div>
+        <div class="col-r col-xs-12 col-lg-9">
+        <div class="pub-card-body">
+        <h5 class="title">Geometry-controlled instability pathway selection in elastic helices enables fast, efficient robotic locomotion.</h5>
+        <h6 class="authors">
+        <u>Jiaqi Wang</u>*,
+                                    Dezhong Tong*,
+                                    Zexiong Chen,
+                                    Xiaonan Huang,
+                                    Khalid Jawed Mohammad 
+                                    
+                                </h6>
+        <p class="info">
+        <a class="journal" href="" style="color:#0d5797;"> [Science Advances (under review)] </a>
+        </p>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="pub-card" data-selected="true" data-topic="journal" data-year="2026">
+        <div class="row">
+        <div class="col-l col-xs-12 col-lg-3">
+        <video autoplay="" height="100%" loop="" muted="" playsinline="" width="100%"><source src="data/projects/V-PCR.mp4" type="video/mp4"/>Your browser does not support the video tag.</video>
+        </div>
+        <div class="col-r col-xs-12 col-lg-9">
+        <div class="pub-card-body">
+        <h5 class="title">Highly Deformable Proprioceptive Membrane for Real-Time 3D Shape Reconstruction.</h5>
+        <h6 class="authors">
+                                    Guanyu Xu,
+                                    <u>Jiaqi Wang</u>*†,
+                                    Dezhong Tong,
+                                    Xiaonan Huang
+                                    
+                                </h6>
+        <p class="info">
+        <a class="journal" href="arXiv preprint arXiv:2601.13574" style="color:#0d5797;"> [Advanced Robotics Research (under review)] </a>
+        </p>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="pub-card" data-selected="true" data-topic="journal" data-year="2026">
+        <div class="row">
+        <div class="col-l col-xs-12 col-lg-3">
+        <video autoplay="" height="100%" loop="" muted="" playsinline="" width="100%"><source src="data/projects/V-PCR.mp4" type="video/mp4"/>Your browser does not support the video tag.</video>
+        </div>
+        <div class="col-r col-xs-12 col-lg-9">
+        <div class="pub-card-body">
+        <h5 class="title">SPPIRO: A Soft, Power-Autonomous, Proprioceptive In-Pipe RObot for Adaptive Inspection in Complex Pipeline Environments</h5>
+        <h6 class="authors">
+                                    Zexiong Chen,
+                                    Xinqi Zhang,
+                                    <u>Jiaqi Wang</u>†,
+                                    Xiaonan Huang
+                                    
+                                </h6>
+        <p class="info">
+        <a class="journal" href="https://www.researchsquare.com/article/rs-7331030/v1" style="color:#0d5797;"> [Nature NPJ Robotics (under review)] </a>
+        </p>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="pub-card" data-selected="true" data-topic="journal" data-year="2025">
+        <div class="row">
+        <div class="col-l col-xs-12 col-lg-3">
+        <video autoplay="" height="100%" loop="" muted="" playsinline="" width="100%"><source src="data/projects/V-PCR.mp4" type="video/mp4"/>Your browser does not support the video tag.</video>
+        </div>
+        <div class="col-r col-xs-12 col-lg-9">
+        <div class="pub-card-body">
+        <h5 class="title">Discrete differential geometry for simulating nonlinear behaviors of flexible systems: A survey</h5>
+        <h6 class="authors">
+                                    Dezhong Tong*,
+                                    Andrew Choi*,
+                                    <u>Jiaqi Wang</u>*,
+                                    Weicheng Huang,
+                                    Zexiong Chen,
+                                    Jiahao Li,
+                                    Xiaonan Huang,
+                                    Mingchao Liu,
+                                    Huajian Gao,
+                                    K. Jimmy Hsia
+                                    
+                                </h6>
+        <p class="info">
+        <a class="journal" href="https://www.sciencedirect.com/science/article/pii/S2352431625001427" style="color:#0d5797;"> [Extreme Mechanics Letters (Cover paper)] </a>
+        </p>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="pub-card" data-selected="true" data-topic="workshop" data-year="2025">
+        <div class="row">
+        <div class="col-l col-xs-12 col-lg-3">
+        <video autoplay="" height="100%" loop="" muted="" playsinline="" width="100%"><source src="data/projects/V-PCR.mp4" type="video/mp4"/>Your browser does not support the video tag.</video>
+        </div>
+        <div class="col-r col-xs-12 col-lg-9">
+        <div class="pub-card-body">
+        <h5 class="title"> Origami-Inspired Soft Robotic Arm: A Modular Platform for Manipulation.</h5>
+        <h6 class="authors">
+                                    Jiyang Wang,
+                                    Yuchen You,
+                                    Xinqi Zhang,
+                                    Haobo Fang,
+                                    <u>Jiaqi Wang</u>†,
+                                    Xiaonan Huang
+                                    
+                                </h6>
+        <p class="info">
+        <a class="workshop" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=2JFIuDUAAAAJ&amp;citation_for_view=2JFIuDUAAAAJ:d1gkVwhDpl0C" style="color:#0d5797;"> [ICRA 2025 Workshop] </a>
+        </p>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="pub-card" data-selected="true" data-topic="journal" data-year="2025">
+        <div class="row">
+        <div class="col-l col-xs-12 col-lg-3">
+        <video autoplay="" height="100%" loop="" muted="" playsinline="" width="100%"><source src="data/projects/V-PCR.mp4" type="video/mp4"/>Your browser does not support the video tag.</video>
+        </div>
+        <div class="col-r col-xs-12 col-lg-9">
+        <div class="pub-card-body">
+        <h5 class="title">SPARC: A Soft, Proprioceptive, Agile Robot for 3D Climbing and Exploration with Precise Trajectory Following</h5>
+        <h6 class="authors">
+                                        Weicheng Fan*,
+                                        <u>Jiaqi Wang</u>*,
+                                        Hongjian Zhang,
+                                        Qichen Wu,
+                                        Genliang Chen,
+                                        Hao Wang,
+                                        Xiaonan Huang
+                                        
+                                    </h6>
+        <p class="info">
+        <a class="journal" href="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/advs.202510382" style="color:#0d5797;"> [Advanced Science] </a>
+        </p>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="pub-card" data-selected="true" data-topic="journal" data-year="2024">
+        <div class="row">
+        <div class="col-l col-xs-12 col-lg-3">
+        <video autoplay="" height="100%" loop="" muted="" playsinline="" width="100%"><source src="data/projects/V-PCR.mp4" type="video/mp4"/>Your browser does not support the video tag.</video>
+        </div>
+        <div class="col-r col-xs-12 col-lg-9">
+        <div class="pub-card-body">
+        <h5 class="title">Vacuum-Driven Parallel Continuum Robots With Self-Sensing Origami Linkages</h5>
+        <h6 class="authors">
+                                            Weicheng Fan*,
+                                            <u>Jiaqi Wang</u>*,
+                                            Zhuang Zhang,
+                                            Genliang Chen,
+                                            Hao Wang
+                                            
+                                        </h6>
+        <p class="info">
+        <a class="journal" href="https://ieeexplore.ieee.org/document/10378957" style="color:#0d5797;"> [IEEE/ASME Transactions on Mechatronics] </a>
+        </p>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
         </div>
     </div>
 </div>
@@ -766,8 +745,9 @@ $(function() {
         allTopics.push({name: $(allTopicsLink[topicId]).data("topic"), title: $(allTopicsLink[topicId]).html()});
     }
 
-    $("#publication-by-selected").click();
+    // $("#publication-by-selected").click();
     // $("#publication-by-date").click();
+    $("#publication-by-topic").click();
     $("#main-pub-card-container").removeClass("hide");
 });
 </script>
